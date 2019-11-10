@@ -39,7 +39,7 @@
   # Global gitignore rules
   excludesfile = ~/.gitignore_global
   eol = lf
-  autocrlf = true
+  autocrlf = false
   attributesfile = ~/.gitattributes
 
   # Pay attention to case, even on OSX
