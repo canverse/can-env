@@ -59,6 +59,9 @@ cd $DOTFILES_DIR
 # Get the uname string
 unamestr=`uname`
 
+if [[ -d $HOME/history ]]; then
+    mkdir $HOME/history # This folder is used for keeping zsh logs
+fi
 
 # Install oh-my-zsh first, as the laptop script doesn't install it
 ZSH_DIR="$HOME/.oh-my-zsh"

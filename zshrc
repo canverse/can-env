@@ -128,10 +128,6 @@ setopt EXTENDED_HISTORY
 # Import newly written commands from the history file
 setopt SHARE_HISTORY
 
-if [[ -d $HOME/history ]]; then
-    mkdir $HOME/history
-fi
-
 precmd() {
     if [ "$(id -u)" -ne 0 ]; then
         echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history | tail -n 1)" >>! $HOME/history/zsh-history-$(date "+%Y-%m-%d").log;
