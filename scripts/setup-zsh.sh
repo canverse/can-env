@@ -27,9 +27,6 @@ else
     echo "oh-my-zsh already installed"; # Should I prompt for repull?
 fi
 
-
-cp "${CAN_ENV_SCRIPT_BASE}/../configFiles/.zshrc" "${HOME}"
-
 ## oh-my-zsh powerlevel9k theme setup
 POWER_LEVEL_10K_GIT_URL="https://github.com/romkatv/powerlevel10k.git";
 gitClone $POWER_LEVEL_10K_GIT_URL "${OH_MY_ZSH_THEMES_FOLDER}/powerlevel10k" "powerlevel10k";
