@@ -87,13 +87,15 @@ fi
 fancy_echo "Updating Homebrew formulas ..."
 brew update
 
+DOTFILES_DIR=$HOME/can-env
+
 brew_install_or_upgrade 'zsh'
 brew_install_or_upgrade 'git'
 brew_install_or_upgrade 'the_silver_searcher'
 brew_install_or_upgrade 'vim'
 brew_install_or_upgrade 'ctags'
 brew_install_or_upgrade 'tmux'
-$HOME/dotfiles/script/setup/tmux.sh
+$DOTFILES_DIR/script/setup/tmux.sh
 brew_install_or_upgrade 'imagemagick'
 brew_install_or_upgrade 'qt'
 brew_install_or_upgrade 'shellcheck'
