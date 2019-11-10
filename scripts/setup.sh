@@ -81,14 +81,14 @@ fi
 
 # Define a function used by the setup scripts to run all the custom install
 # scripts.
-#run_install_scripts() {
-#    install_scripts_dir=$HOME/dotfiles/scripts/install
-#
-#    # Run each script
-#    for file in $install_scripts_dir/*; do
-#        "$install_scripts_dir/$file"
-#    done
-#}
+run_install_scripts() {
+    install_scripts_dir=$HOME/dotfiles/scripts/install
+
+    # Run each script
+    for file in $install_scripts_dir/*; do
+        "$install_scripts_dir/$file"
+    done
+}
 
 # Run the OS-specific setup scripts
 if [[ "$unamestr" == 'Darwin' ]]; then

@@ -11,8 +11,8 @@ set -o pipefail # Pipe exit code should be non-zero when a command in it fails
 IFS=$'\t\n' # Stricter IFS settings
 
 install_or_upgrade() {
-#    sudo apt-cyg -yq install "$@"
-  apt-cyg show "$@"
+  apt-cyg -yq install "$@"
+ # apt-cyg show "$@"
 }
 
 ###############################################################################
@@ -73,7 +73,7 @@ install_or_upgrade rlwrap
 # Install xsane and dependencies
 install_or_upgrade libsane libsane-extras sane-utils xsane
 # Install other software using custom install scripts
-run_install_scripts
+# run_install_scripts
 
 ## This needs to be run after tmux installation
 #$HOME/dotfiles/scripts/setup/tmux.sh
