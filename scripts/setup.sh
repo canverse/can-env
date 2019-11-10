@@ -99,29 +99,31 @@ elif [[ "$unamestr" == 'CYGWIN_NT-10.0' ]]; then
     "$DOTFILE_SCRIPTS_DIR/setup/cygwin.sh"
 fi
 
-###############################################################################
-# Install asdf for version management
-###############################################################################
-#asdf_dir=$HOME/.asdf
-#cd $HOME
-#
-#if [ ! -d $asdf_dir ]; then
-#    echo "Installing asdf..."
-#    git clone https://github.com/asdf-vm/asdf.git $asdf_dir
-#    echo "asdf installation complete"
-#else
-#    echo "asdf already installed"
-#fi
-#
+##############################################################################
+ Install asdf for version management
+##############################################################################
+asdf_dir=$HOME/.asdf
+cd $HOME
+
+if [ ! -d $asdf_dir ]; then
+    echo "Installing asdf..."
+    git clone https://github.com/asdf-vm/asdf.git $asdf_dir
+    echo "asdf installation complete"
+else
+    echo "asdf already installed"
+fi
+
+
 ################################################################################
 ## Create symlinks to custom config now that all the software is installed
 ################################################################################
 $DOTFILE_SCRIPTS_DIR/makesymlinks.sh
+$DOTFILE_SCRIPTS_DIR/setup-keybase.sh
 #
 ################################################################################
 ## Reload the .bashrc so we have asdf and all the other recently installed tools
 ################################################################################
-#source $HOME/.bashrc
+source $HOME/.bashrc
 #
 ## Install all the plugins needed
 #asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git || true
@@ -130,15 +132,15 @@ $DOTFILE_SCRIPTS_DIR/makesymlinks.sh
 #asdf plugin-add lua https://github.com/Stratus3D/asdf-lua.git || true
 #asdf plugin-add postgres https://github.com/smashedtoatoms/asdf-postgres.git || true
 #asdf plugin-add rebar https://github.com/Stratus3D/asdf-rebar.git || true
-#asdf plugin-add python https://github.com/danhper/asdf-python.git || true
-#asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git || true
-#asdf plugin-add yarn https://github.com/twuni/asdf-yarn.git || true
+asdf plugin-add python https://github.com/danhper/asdf-python.git || true
+asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git || true
+asdf plugin-add yarn https://github.com/twuni/asdf-yarn.git || true
 #
 ## Imports Node.js release team's OpenPGP keys to main keyring
-#bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring || true
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring || true
 #
 ## Install the software versions listed in the .tool-versions file in $HOME
-#asdf install
+asdf install
 #
 ################################################################################
 ## Install Misc. Packages
