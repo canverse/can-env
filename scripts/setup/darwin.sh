@@ -110,14 +110,6 @@ brew unlink openssl && brew link openssl --force
 
 brew_install_or_upgrade 'libyaml'
 
-gem update --system
-
-gem_install_or_update 'bundler'
-
-fancy_echo "Configuring Bundler ..."
-  number_of_cores=$(sysctl -n hw.ncpu)
-  bundle config --global jobs $((number_of_cores - 1))
-
 # Exuberant Ctags
 brew_install_or_upgrade ctags
 
@@ -126,12 +118,6 @@ brew_install_or_upgrade jq
 
 # Install pandoc
 brew_install_or_upgrade pandoc
-
-# WxWidgets for Erlang
-brew_install_or_upgrade wxmac --with-static --with-stl --universal
-
-# Install pianobar for music
-brew_install_or_upgrade pianobar
 
 # For JSON pretty printing in the quicklook window
 brew cask install quicklook-json
