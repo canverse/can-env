@@ -95,7 +95,7 @@ brew_install_or_upgrade 'the_silver_searcher'
 brew_install_or_upgrade 'vim'
 brew_install_or_upgrade 'ctags'
 brew_install_or_upgrade 'tmux'
-$DOTFILES_DIR/script/setup/tmux.sh
+$DOTFILES_DIR/scripts/setup/tmux.sh
 brew_install_or_upgrade 'imagemagick'
 brew_install_or_upgrade 'qt'
 brew_install_or_upgrade 'shellcheck'
