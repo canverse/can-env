@@ -15,6 +15,10 @@
         install apt-cyg /bin
         apt-cyg install zsh git gdb dos2unix openssh vim
         ```
+    * I had issues with `mintty` crashing on me upon launch so trying to fix issues.
+        ```shell script
+        wget https://github.com/rprichard/winpty/releases/download/0.4.3/winpty-0.4.3-cygwin-2.8.0-x64.tar.gz && tar xzvf winpty-0.4.3-cygwin-2.8.0-x64.tar.gz
+        ```
     * (Optional) If you want `zwsh` to use the Windows `home` you need to add `db_home: windows` at the end of `/etc/nsswitch.conf`. (I choose to leave this enabled because I intend to share some of these configurations to `cmd`. (maybe there is a better way of doing it?)
     
     We're done with `cygwin` for now. 
@@ -25,7 +29,7 @@
     
     Make sure that you're in the same folder where you cloned the `canverse/can-env` repository and from a `Powershell` execute the following command:
     ```powershell
-        ./install-fonts.ps1
+        ./setup/install-fonts.ps1
     ```
     You will be asked to run the script as an administrator if you aren't already. This is normal. 
     

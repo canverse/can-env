@@ -21,34 +21,23 @@ install_or_upgrade() {
 
 # Make apt-get calls non-interactive
 DEBIAN_FRONTEND=noninteractive
-sudo apt-cyg update
+apt-cyg update
+apt-cyg dos2unix
 
 # General dependencies
 install_or_upgrade autoconf
-install_or_upgrade libssl-dev
-install_or_upgrade build-essential
 
 # Tools I need for development
 # Add apt apt-get repository with latest version of Git
 # sudo add-apt-repository ppa:git-core/ppa -y
 install_or_upgrade git
 install_or_upgrade zsh
-install_or_upgrade vim-gtk
 install_or_upgrade curl
 
 # other development tools
-install_or_upgrade silversearcher-ag # doesn't exist on cygwin
-install_or_upgrade exuberant-ctags
 install_or_upgrade jq
-install_or_upgrade linux-tools-`uname -r` # perf
-install_or_upgrade dstat
-# For use with Erlang's fprof
-install_or_upgrade kcachegrind
 # For watching for file change events
-install_or_upgrade entr
-install_or_upgrade vagrant
 install_or_upgrade ansible
-install_or_upgrade percona-toolkit
 
 # For clipboard access on the command line
 install_or_upgrade xsel
@@ -60,44 +49,17 @@ install_or_upgrade xsel
 #install_or_upgrade virtualbox-5.2
 
 # Shell script linting
-install_or_upgrade shellcheck
-
 # Communication apps
-install_or_upgrade weechat
-install_or_upgrade thunderbird
-install_or_upgrade enigmail # For secure email
-
-# Signal for encrypted messaging
-#curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-#echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-#sudo apt-get update
-#install_or_upgrade signal-desktop
-
-# For emoji
-install_or_upgrade ttf-ancient-fonts
+# install_or_upgrade weechat
 
 # For the terminal
 #sudo apt-get install fonts-inconsolata
 # Visualization library
 #install_or_upgrade graphviz
 
-# Needed for capybara
-install_or_upgrade libqt4-dev libqtwebkit-dev
-
-# Postgres
-install_or_upgrade libpq-dev # development package
-
-# Install pip so we can install python packages easily
-install_or_upgrade python-pip
-
-# ReText
-install_or_upgrade retext
-
-# Install mosh shell for high latency servers
-install_or_upgrade mosh
 
 # Misc other dependencies
-install_or_upgrade ncftp python-paramiko python-pycryptopp lftp python-boto python-dev librsync-dev
+install_or_upgrade ncftp lftp
 
 # Needed for tmux
 install_or_upgrade libevent-dev
@@ -105,14 +67,11 @@ install_or_upgrade libevent-dev
 # Tree for directory structure
 install_or_upgrade tree
 
-# For password management
-install_or_upgrade pass
-
 # For wrapping shells that don't use readline
 install_or_upgrade rlwrap
 
 # Install xsane and dependencies
-install_or_
+install_or_upgrade libsane libsane-extras sane-utils xsane
 # Install other software using custom install scripts
 run_install_scripts
 
