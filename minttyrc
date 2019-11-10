@@ -1,19 +1,19 @@
-echo -ne '\e]10;18,26,33\a';
-echo -ne '\e]11;230,225,207\a';
-echo -ne '\e]12;230,225,207\a';
-echo -ne '\e]4;0;0,0,0\a';
-echo -ne '\e]4;1;65,65,65\a';
-echo -ne '\e]4;2;255,77,65\a';
-echo -ne '\e]4;3;255,125,120\a';
-echo -ne '\e]4;4;196,211,100\a';
-echo -ne '\e]4;5;220,242,82\a';
-echo -ne '\e]4;6;236,206,88\a';
-echo -ne '\e]4;7;255,246,139\a';
-echo -ne '\e]4;8;64,179,225\a';
-echo -ne '\e]4;9;119,221,255\a';
-echo -ne '\e]4;10;245,136,139\a';
-echo -ne '\e]4;11;255,180,184\a';
-echo -ne '\e]4;12;163,233,213\a';
-echo -ne '\e]4;13;163,233,213\a';
-echo -ne '\e]4;14;255,255,255\a';
-echo -ne '\e]4;15;255,255,255\a';
+BackgroundColour=18,26,33
+ForegroundColour=230,225,207
+CursorColour=230,225,207
+Black=0,0,0
+BoldBlack=65,65,65
+Red=255,77,65
+BoldRed=255,125,120
+Green=196,211,100
+BoldGreen=220,242,82
+Yellow=236,206,88
+BoldYellow=255,246,139
+Blue=64,179,225
+BoldBlue=119,221,255
+Magenta=245,136,139
+BoldMagenta=255,180,184
+Cyan=163,233,213
+BoldCyan=163,233,213
+White=255,255,255
+BoldWhite=255,255,255
