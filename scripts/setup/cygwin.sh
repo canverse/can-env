@@ -11,7 +11,7 @@ set -o pipefail # Pipe exit code should be non-zero when a command in it fails
 IFS=$'\t\n' # Stricter IFS settings
 
 install_or_upgrade() {
-  apt-cyg -yq install "$@"
+  apt-cyg install "$@"
  # apt-cyg show "$@"
 }
 
