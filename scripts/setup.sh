@@ -27,9 +27,9 @@ if [ ! -d $DOTFILES_DIR ]; then
 else
   cd $DOTFILES_DIR
   # We could have modifications in the repository, so we stash them
-  git stash push
-  git pull origin master
-  git stash pop
+  #git stash push
+  #git pull origin master
+  # gt stash pop
 fi
 
 # Change to the dotfiles directory either way
