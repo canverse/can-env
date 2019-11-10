@@ -18,10 +18,10 @@ ORIGINAL_IFS=$IFS
 border="====="
 
 # Dotfiles directory
-dotfiles=$HOME/dotfiles
+dotfiles=$HOME/can-env
 
 # Old dotfiles backup directory
-olddir=$HOME/dotfiles_old
+olddir=$HOME/can-env__old
 
 # List of space separated files/folders to symlink in homedir (these are the typical "dotfiles")
 files="mintty vimrc vim zshrc bashrc tmux.conf gitignore_global ackrc ctags screenrc \
