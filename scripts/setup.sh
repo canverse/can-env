@@ -12,7 +12,7 @@ ORIGINAL_IFS=$IFS
 
 cd $HOME
 
-DOTFILES_DIR=$HOME/.can-env
+DOTFILES_DIR=$HOME/can-env
 DOTFILE_SCRIPTS_DIR=$DOTFILES_DIR/scripts
 
 ###############################################################################
