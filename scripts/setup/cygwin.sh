@@ -62,7 +62,7 @@ install_or_upgrade xsel
 install_or_upgrade ncftp lftp
 
 # Needed for tmux
-install_or_upgrade libevent-dev
+# install_or_upgrade libevent-dev
 
 # Tree for directory structure
 install_or_upgrade tree
@@ -71,7 +71,7 @@ install_or_upgrade tree
 install_or_upgrade rlwrap
 
 # Install xsane and dependencies
-install_or_upgrade libsane libsane-extras sane-utils xsane
+# install_or_upgrade libsane libsane-extras sane-utils xsane
 # Install other software using custom install scripts
 # run_install_scripts
 
