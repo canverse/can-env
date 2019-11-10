@@ -18,7 +18,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # --------------
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs);
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time);
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # Add a space in the first prompt
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%f"
 # Visual customisation of the second prompt line
