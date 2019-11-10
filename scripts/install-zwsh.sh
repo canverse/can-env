@@ -1,7 +1,3 @@
-# TODO: This is for OS X for now, have to update for other platforms
-
-brew install zsh zsh-completions;
-
 ## oh-my-zsh setup
 OH_MY_ZSH_FOLDER="${HOME}/.oh-my-zsh";
 OH_MY_ZSH_CUSTOM_FOLDER="${OH_MY_ZSH_FOLDER}/custom";
@@ -42,4 +38,3 @@ gitClone $ZSH_SUGGESTIONS_GIT_URL "${OH_MY_ZSH_PLUGINS_FOLDER}/zsh-autosuggestio
 ## zsh-syntax-highlighting
 ZSH_SYNTAX_HIGHLIGHTING_GIT_URL="https://github.com/zsh-users/zsh-syntax-highlighting.git";
 gitClone $ZSH_SYNTAX_HIGHLIGHTING_GIT_URL "${OH_MY_ZSH_PLUGINS_FOLDER}/zsh-syntax-highlighting" "zsh-syntax-highlighting";
-

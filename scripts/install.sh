@@ -4,7 +4,7 @@
 
 # TODO: Back up the current .zshrc file if found and replace/update it with the new contents
 
-export CAN_ENV_SCRIPT_BASE=$(dirname "$0");
+export CAN_ENV_SCRIPT_BASE=$(pwd);
 
 OH_MY_ZSH_FOLDER="${HOME}/.oh-my-zsh";
 
@@ -27,4 +27,4 @@ cleanUp;
 copyConfigFolder;
 
 "${CAN_ENV_SCRIPT_BASE}"/install-create-directory.sh;
-"${CAN_ENV_SCRIPT_BASE}"/install-zsh.sh;
+"${CAN_ENV_SCRIPT_BASE}"/install-zwsh.sh;
