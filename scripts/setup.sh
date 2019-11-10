@@ -100,7 +100,7 @@ elif [[ "$unamestr" == 'CYGWIN_NT-10.0' ]]; then
 fi
 
 ##############################################################################
- Install asdf for version management
+# Install asdf for version management
 ##############################################################################
 asdf_dir=$HOME/.asdf
 cd $HOME
