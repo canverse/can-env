@@ -122,9 +122,6 @@ brew_install_or_upgrade pandoc
 # For JSON pretty printing in the quicklook window
 brew cask install quicklook-json
 
-# QCacheGrind for valgrind analysis
-brew_install_or_upgrade qcachegrind --with-graphviz
-
 # For watching for file change events
 brew_install_or_upgrade entr
 
