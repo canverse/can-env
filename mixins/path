@@ -1,0 +1,8 @@
+# Brew
+PATH=/usr/local/sbin:$PATH
+
+# can-env directory
+export CAN_ENV=$HOME/can-env
+
+# Finally export completed PATH
+export PATH

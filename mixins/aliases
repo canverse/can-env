@@ -1,0 +1,57 @@
+if ! hash vim 2>/dev/null; then
+    alias vim="vi"
+else
+    alias vi="vim"
+fi
+
+# For convenience
+alias ..="cd .."
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+# Git alias
+alias g="git"
+alias gst="git status"
+alias gco="git commit -m "
+alias gdh="git diff HEAD "
+
+# Additional tool aliases to make commands shorter
+alias ot="open_ticket"
+
+# Function aliases (for functions defined in scripts/functions/)
+# alias kllist='kill_listener'
+
+# Custom options
+if [ -f "$HOME/dotfiles/mixins/aliases.custom" ]; then
+    source "$HOME/dotfiles/mixins/aliases.custom"
+fi
+
+# Charts
+# alias bigo="open $HOME/dotfiles/charts/bigoposter.pdf"
+# alias vim-cheatsheet="open $HOME/dotfiles/charts/vim_cheat_sheet_for_programmers_print.png"
+
+# Aliases for commands that aren't available via oh-my-zsh
+alias rspec="_rspec_command"
+alias spring="_spring_command"
+alias be="bundle exec"
+
+# Silver Searcher aliases
+alias agj="ag --js"
+alias agp="ag --python"
+alias agu="ag -u"
+
+# URL encoding/decoding commands
+alias urldecode='python -c "import sys, urllib as ul; \
+    print ul.unquote_plus(sys.argv[1])"'
+
+alias urlencode='python -c "import sys, urllib as ul; \
+    print ul.quote_plus(sys.argv[1])"'
+
+# esh alias for a better Erlang shell with a readline wrapper
+# https://ferd.ca/repl-a-bit-more-and-less-than-that.html
+alias esh='rlwrap erl -oldshell'
+
+# iex alias for a better Elixir shell with a readline wrapper
+alias iex='rlwrap -afoo iex'

@@ -1,0 +1,18 @@
+# Set vim with no config as the default editor
+export EDITOR='vim -u NONE'
+
+# Less for paging
+# https://seclists.org/fulldisclosure/2014/Nov/74
+export LESS='-LMR'
+export PAGER='less'
+
+#export TZ='Europe/Berlin'
+
+# Perl options
+export PERL_MB_OPT="--install_base \"$HOME/perl5\""; export PERL_MB_OPT;
+export PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"; export PERL_MM_OPT;
+
+# Custom options
+if [ -f "$HOME/dotfiles/mixins/shellrc.custom" ]; then
+    source "$HOME/dotfiles/mixins/shellrc.custom"
+fi

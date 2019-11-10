@@ -1,0 +1,7 @@
+# Use asdf
+. $HOME/.asdf/asdf.sh
+
+# Use asdf autocompletions
+. $HOME/.asdf/completions/asdf.bash
+
+# asdf plugin options

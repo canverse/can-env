@@ -120,6 +120,7 @@ brew_install_or_upgrade jq
 brew_install_or_upgrade pandoc
 
 # For JSON pretty printing in the quicklook window
+# TODO: make this one pretty like the others!
 brew cask install quicklook-json
 
 # For watching for file change events
