@@ -35,7 +35,6 @@ source $ZSH/lib/key-bindings.zsh
 source $ZSH/lib/completion.zsh
 source $ZSH/lib/misc.zsh
 source $ZSH/plugins/gitfast/gitfast.plugin.zsh
-source $ZSHRC_PATH/zsh/blinks-modified.zsh-theme
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"

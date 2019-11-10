@@ -71,11 +71,11 @@ else
     # Install it if don't have a ~/.oh-my-zsh directory
     # curl -L http://install.ohmyz.sh | sh
     if [[ "$unamestr" == 'Darwin' ]]; then
-        "$DOTFILE_SCRIPTS_DIR/install-zsh.sh"
+        "$DOTFILE_SCRIPTS_DIR/setup-zsh.sh"
     elif [[ "$unamestr" == 'Linux' ]]; then
-        "$DOTFILE_SCRIPTS_DIR/install-zsh.sh"
+        "$DOTFILE_SCRIPTS_DIR/setup-zsh.sh"
     elif [[ "$unamestr" == 'CYGWIN_NT-10.0' ]]; then
-        "$DOTFILE_SCRIPTS_DIR/install-zwsh.sh"
+        "$DOTFILE_SCRIPTS_DIR/setup-zwsh.sh"
     fi
 fi
 
