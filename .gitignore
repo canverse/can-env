@@ -1,4 +1,17 @@
 .idea/
 .con-emu-themes/
-.backup
-*.symlink
+
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+
+tmp/*
+
+vimrc.local
+config/nvim/plugged
+config/nvim/autoload/plug.vim
+backup/
+*.log
+.DS_Store

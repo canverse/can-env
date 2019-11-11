@@ -1,7 +1,7 @@
-#source scripts/backup.sh
+source scripts/backup.sh
 source scripts/link.sh
-nvim +PlugInstall +qall
-nvim +UpdateRemotePlugins +qall
+nvim +PlugInstall +qall || true
+nvim +UpdateRemotePlugins +qall || true
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)can-env: Installing Space vim-airline theme.$(tput sgr 0)"
