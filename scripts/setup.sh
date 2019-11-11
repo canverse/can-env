@@ -42,7 +42,7 @@ cd $DOTFILES_DIR
 #mkdir -p $HOME/bin # Third-party binaries
 #mkdir -p $HOME/lib # Third-party software
 #mkdir -p $HOME/nobackup # All files that shouldn't be backed up the normal way
-#mkdir -p $HOME/history # Zsh and Bash history files
+mkdir -p $HOME/history # Zsh and Bash history files
 #mkdir -p $HOME/erl_libs # $ERL_LIBS directory
 #mkdir -p $HOME/devel
 #mkdir -p $HOME/devel/src # Go source directory
@@ -58,10 +58,6 @@ cd $DOTFILES_DIR
 ###############################################################################
 # Get the uname string
 unamestr=`uname`
-
-if [[ -d $HOME/history ]]; then
-    mkdir $HOME/history # This folder is used for keeping zsh logs
-fi
 
 # Install oh-my-zsh first, as the laptop script doesn't install it
 ZSH_DIR="$HOME/.oh-my-zsh"
