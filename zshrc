@@ -94,8 +94,8 @@ echo -e "\033]6;1;bg;red;brightness;18\a"
 echo -e "\033]6;1;bg;green;brightness;26\a"
 echo -e "\033]6;1;bg;blue;brightness;33\a"
 
-
-source ${OH_MY_ZSH_PLUGINS_FOLDER}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Do this manually for now
+# source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 DISABLE_CORRECTION="true"
 
