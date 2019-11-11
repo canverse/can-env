@@ -20,11 +20,7 @@ else
   compinit -C
 fi
 
-# For my dotfiles repo to work correctly the paths to source'd files must be
-# relative to the location of this file. This doesn't handle cases where the
-# .zshrc is symlinked to a symlink.
-# Taken from http://stackoverflow.com/a/26492107/1245380
-ZSHRC_PATH=$(dirname "$(readlink "${(%):-%N}")")
+ZSHRC_PATH=$HOME/can-env
 
 # This is faster than loading all of oh-my-zsh
 source $ZSH/lib/functions.zsh

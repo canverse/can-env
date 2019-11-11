@@ -59,7 +59,7 @@ cd $DOTFILES_DIR
 # Get the uname string
 unamestr=`uname`
 
-if [[ -d $HOME/history ]]; then
+if [[ -d "$HOME/history" ]]; then
     mkdir $HOME/history # This folder is used for keeping zsh logs
 fi
 

@@ -13,13 +13,15 @@ resolve_source() {
 
 #resolve_source $SOURCE
 
-FILES="$HOME/dotfiles/mixins/general
-$HOME/dotfiles/mixins/asdf
-$HOME/dotfiles/mixins/functions
-$HOME/dotfiles/mixins/aliases
-$HOME/dotfiles/mixins/grep
-$HOME/dotfiles/mixins/path
-$HOME/dotfiles/mixins/man_color"
+CAN_ENV_DIR="$HOME/can-env"
+
+FILES="$CAN_ENV_DIR/mixins/general
+$CAN_ENV_DIR/mixins/asdf
+$CAN_ENV_DIR/mixins/functions
+$CAN_ENV_DIR/mixins/aliases
+$CAN_ENV_DIR/mixins/grep
+$CAN_ENV_DIR/mixins/path
+$CAN_ENV_DIR/mixins/man_color"
 
 
 for file in $FILES
@@ -31,7 +33,6 @@ done
 export SHELL=/bin/bash
 
 # Keep all history
-shopt -s histappend
 export HISTFILESIZE=
 export HISTSIZE=
 export HISTFILE=~/.bash_eternal_history
