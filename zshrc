@@ -32,6 +32,8 @@ source $ZSH/lib/completion.zsh
 source $ZSH/lib/misc.zsh
 source $ZSH/plugins/gitfast/gitfast.plugin.zsh
 
+source $ZSH/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
