@@ -20,8 +20,7 @@ $CAN_ENV_DIR/mixins/asdf
 $CAN_ENV_DIR/mixins/functions
 $CAN_ENV_DIR/mixins/aliases
 $CAN_ENV_DIR/mixins/grep
-$CAN_ENV_DIR/mixins/path
-$CAN_ENV_DIR/mixins/man_color"
+$CAN_ENV_DIR/mixins/path"
 
 
 for file in $FILES

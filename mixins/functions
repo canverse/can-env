@@ -26,9 +26,9 @@ function yaml_to_json() {
 }
 
 # Load functions in other files
-for file in $HOME/dotfiles/scripts/functions/*; do
-    source $file;
-done
+#for file in $HOME/dotfiles/scripts/functions/*; do
+ #   source $file;
+#done
 
 # Load custom functions
 #custom_functions_dir="$HOME/dotfiles/scripts/custom_functions"
