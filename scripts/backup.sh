@@ -16,11 +16,11 @@ mkdir -p $BACKUP_DIR
 
 files=("$HOME/.config/nvim" "$HOME/.zshrc" "$HOME/.tmux.conf")
 for filename in "${files[@]}"; do
-    if [ ! -L $filename ]; then
+    if [[ ! -L $filename ]]; then
       echo "---------------------------------------------------------"
       echo "$(tput setaf 2)can-env: Backing up $filename.$(tput sgr 0)"
       echo "---------------------------------------------------------"
-      mv $filename $BACKUP_DIR 2>/dev/null
+      mv $filename $BACKUP_DIR || true
     else
       echo "---------------------------------------------------------"
       echo -e "$(tput setaf 3)can-env: $filename does not exist at this location or is a symlink.$(tput sgr 0)"

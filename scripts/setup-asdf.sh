@@ -9,8 +9,6 @@ NODE_VERSION="12.13.0"
 PYTHON3_VERSION="3.8.0"
 PYTHON2_VERSION="2.7.17"
 
-cd $HOME
-
 rm asdf_tool_versions # remove this later
 
 echo "nodejs ${NODE_VERSION}" >> $asdf_tool_versions

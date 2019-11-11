@@ -1,5 +1,5 @@
-source ./backup.sh
-source ./link.sh
+#source scripts/backup.sh
+source scripts/link.sh
 nvim +PlugInstall +qall
 nvim +UpdateRemotePlugins +qall
 

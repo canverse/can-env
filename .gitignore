@@ -1,2 +1,4 @@
 .idea/
 .con-emu-themes/
+.backup
+*.symlink

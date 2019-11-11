@@ -15,7 +15,8 @@ for file in $linkables ; do
     echo "---------------------------------------------------------"
     echo "$(tput setaf 2)can-env: Creating symlink for $file.$(tput sgr 0)"
     echo "---------------------------------------------------------"
-    ln -s $file $target
+    echo "file $file"
+    echo "target $target"
   fi
 done
 
@@ -38,6 +39,8 @@ for config in $INSTALLDIR/config/*; do
     echo "---------------------------------------------------------"
     echo "$(tput setaf 2)can-env: Creating symlink for ${config}.$(tput sgr 0)"
     echo "---------------------------------------------------------"
-    ln -s $config $target
+    echo "file $file"
+    echo "target $target"
+    cp -r $config $target
   fi
 done

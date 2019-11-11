@@ -8,29 +8,29 @@ INSTALLDIR=$PWD # Make this configurable
 
 unamestr=`uname`;
 
-#if [[ "$unamestr" == 'Darwin' ]]; then
-#    source "scripts/setup-system-packages.mac.sh"
-#    source "scripts/setup-fonts.mac.sh"
-#
-#elif [[ "$unamestr" == 'Linux' ]]; then
-#    echo "Linux support incoming"
-#    source "scripts/setup-system-packages.nix.sh"
-#fi
-#
-#echo "---------------------------------------------------------"
-#echo "$(tput setaf 2)can-env: Installing asdf.$(tput sgr 0)"
-#echo "---------------------------------------------------------"
-#source scripts/setup-asdf.sh
+if [[ "$unamestr" == 'Darwin' ]]; then
+    source "scripts/setup-system-packages.mac.sh"
+    source "scripts/setup-fonts.mac.sh"
 
-#echo "---------------------------------------------------------"
-#echo "$(tput setaf 2)can-env: Installing languages packages.$(tput sgr 0)"
-#echo "---------------------------------------------------------"
-#source scripts/setup-packages.sh
-#
-#echo "---------------------------------------------------------"
-#echo "$(tput setaf 2)can-env: Installing oh-my-zsh.$(tput sgr 0)"
-#echo "---------------------------------------------------------"
-#source scripts/setup-zsh.sh
+elif [[ "$unamestr" == 'Linux' ]]; then
+    echo "Linux support incoming"
+    source "scripts/setup-system-packages.nix.sh"
+fi
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)can-env: Installing asdf.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+source scripts/setup-asdf.sh
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)can-env: Installing languages packages.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+source scripts/setup-packages.sh
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)can-env: Installing oh-my-zsh.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+source scripts/setup-zsh.sh
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)can-env: Installing Neovim plugins and linking dotfiles.$(tput sgr 0)"
