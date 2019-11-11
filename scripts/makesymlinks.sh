@@ -113,23 +113,18 @@ IFS=$ORIGINAL_IFS
 # Generate and copy gitconfig
 $dotfiles/scripts/generate_gitconfig.sh
 
-# Generate and copy irssi/config
-# $dotfiles/scripts/generate_irssi_config.sh
-
 # setup default tmuxinator project
 #make_dir_if_missing $HOME/.tmuxinator
 #
-## Create directory for Vim undo history
-#make_dir_if_missing $dotfiles/vim/undodir
-#
+
+# Create directory for Vim undo history
+make_dir_if_missing $dotfiles/vim/undodir
+
 ## link the default tmuxinator project
 #symlink_and_save_original $dotfiles/tmuxinator/default.yml \
 #    $HOME/.tmuxinator/default.yml $olddir
 #
-## Symlink the .erlang file
-#symlink_and_save_original $dotfiles/erlang/erlang \
-#    $HOME/.erlang $olddir
-#
+
 ## Symlink all the scripts in scripts/tools to the bin directory
 #tool_scripts=$(find $dotfiles/scripts/tools -type f \( -perm -u=x \) -print)
 #IFS=$'\n'
@@ -147,13 +142,12 @@ $dotfiles/scripts/generate_gitconfig.sh
 #IFS=$ORIGINAL_IFS
 #
 ## If vundle is already installed, remove it and fetch the latest from Github
-#remove_dir_if_exists $dotfiles/vim/bundle/Vundle.vim
+remove_dir_if_exists $dotfiles/vim/autoload/plug.vim
 
-# Download vundle
-#echo "Installing vim plugins..."
-#git clone https://github.com/gmarik/Vundle.vim.git $dotfiles/vim/bundle/Vundle.vim
-## Install vundle and all other plugins
-#vim +PluginInstall +qall
+curl -fLo $dotfiles/vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+vim +PlugInstall
 #
 ## Link gnome terminal profile if we are on gnome
 #if [ -d $HOME/.gconf/ ]; then

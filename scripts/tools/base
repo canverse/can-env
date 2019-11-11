@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+
+# Unoffical Bash "strict mode"
+# http://redsymbol.net/articles/unofficial-bash-strict-mode/
+set -euo pipefail
+#ORIGINAL_IFS=$IFS
+IFS=$'\t\n' # Stricter IFS settings
+
+usage() {
+    cat <<EOF
+    Usage: base <base> <number>
+
+    Converts the number to base 2, 4, 8, 10, and 16.
+
+    The input base should be in decimal. The number should be in the base given.
+EOF
+}
+
+error_exit() {
+    echo "ERROR: $1"
+    usage
+    exit 1
+}
+
+
+base=${1:-}
+number=${2:-}
+
+if [ -z "$base" ]; then
+  error_exit "No base specified"
+fi
+
+if [ -z "$number" ]; then
+  error_exit "No number specified"
+fi
+
+base_to_base() {
+  local in=$1
+  local out=$2
+  local number=$3
+
+  echo "ibase=$in;obase=$out; $number" | bc
+}
+
+print_base_to_base() {
+  local in=$1
+  local out=$2
+  local number=$3
+  local name=$4
+
+  # First convert the output base from decimal to the base of the input number
+  local output_base="$(base_to_base 10 "$in" "$out")"
+
+  # Now we can invoke bc with both the output base and the number both in the
+  # input base
+  local result="$(base_to_base "$in" "$output_base" "$number")"
+
+  echo -e "Base $out\t($name):\t\t$result"
+}
+
+# Print out common base converions
+print_base_to_base "$base" 2 "$number" "Binary"
+print_base_to_base "$base" 4 "$number" "Quaternary"
+print_base_to_base "$base" 8 "$number" "Octal"
+print_base_to_base "$base" 10 "$number" "Decimal"
+print_base_to_base "$base" 16 "$number" "Hexadecimal"
