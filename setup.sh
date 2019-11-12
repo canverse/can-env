@@ -5,6 +5,7 @@ echo "$(tput setaf 2)can-env: Installation starting.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
 INSTALLDIR=$PWD # Make this configurable
+mkdir -p $HOME/.local/share/nvim/backup # This is going to be used as a backup folder for nvim
 
 unamestr=`uname`;
 
