@@ -127,6 +127,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias top="vtop --theme=wizard"
 alias ls="colorls --sd"
+alias sshAgent="eval \$(ssh-agent -s)";
 
 # Set Spaceship as prompt
 autoload -U promptinit; promptinit
