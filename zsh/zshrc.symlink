@@ -118,7 +118,7 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias vim="nvim"
 alias top="vtop --theme=wizard"
-alias ls="colorls -lA --sd"
+alias ls="colorls --sd"
 
 # Set Spaceship as prompt
 autoload -U promptinit; promptinit
