@@ -1,7 +1,3 @@
-# ASDF
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
-
 # Brew on linux
 test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
 test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
@@ -123,6 +119,9 @@ export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 source $ZSH/oh-my-zsh.sh
 
+# ASDF
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # Aliases
 alias vim="nvim"
