@@ -1,3 +1,12 @@
+# ASDF
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+# Brew on linux
+test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+
 # Path to oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -41,7 +50,7 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # Set location of z installation
-. /usr/local/etc/profile.d/z.sh
+. $(brew --prefix)/etc/profile.d/z.sh
 
 ## FZF FUNCTIONS ##
 
