@@ -1,4 +1,0 @@
-# These options seemed to break the Erlang builds. These lines may need to be
-# commented out
-alias grep="grep --color=always"
-export GREP_COLORS="1;35;40"
