@@ -29,6 +29,11 @@ echo "---------------------------------------------------------"
 yarn global add javascript-typescript-langserver
 
 echo "---------------------------------------------------------"
-echo "$(tput setaf 2)JARVIS: Installing vtop.$(tput sgr 0)"
+echo "$(tput setaf 2)can-env: Installing vtop.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 yarn global add vtop
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)can-env: Installing colorls.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+gem install colorls

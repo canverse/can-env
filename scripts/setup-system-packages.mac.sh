@@ -18,9 +18,6 @@ echo "---------------------------------------------------------"
 echo "$(tput setaf 2)can-env: Installing system packages.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 
-#  "node"
-#  "python3"
-
 packages=(
   "git"
   "tmux"
@@ -29,6 +26,7 @@ packages=(
   "ripgrep"
   "fzf"
   "z"
+  "gpg"
 )
 
 for i in "${packages[@]}"
