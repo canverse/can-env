@@ -27,6 +27,7 @@ packages=(
   "fzf"
   "z"
   "gpg"
+  "direnv"
 )
 
 for i in "${packages[@]}"
