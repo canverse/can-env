@@ -27,6 +27,7 @@ fi
 asdf plugin-add python https://github.com/danhper/asdf-python.git || true
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git || true
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git || true
+asdf plugin-add direnv https://github.com/ryodocx/asdf-direnv.git
 
 bash $asdf_dir/plugins/nodejs/bin/import-release-team-keyring || true
 

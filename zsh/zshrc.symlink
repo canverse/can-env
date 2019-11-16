@@ -131,3 +131,5 @@ alias sshAgent="eval \$(ssh-agent -s)";
 
 # Set Spaceship as prompt
 autoload -U promptinit; promptinit
+
+eval "$(direnv hook zsh)"
