@@ -241,13 +241,13 @@ set termguicolors
 " Editor theme
 set background=dark
 try
-  colorscheme OceanicNext
+  colorscheme palenight
 catch
   colorscheme slate
 endtry
 
 " Vim airline theme
-let g:airline_theme='space'
+let g:airline_theme='palenight'
 
 " Add custom highlights in method that is executed every time a colorscheme is sourced
 " See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f for details
@@ -288,8 +288,8 @@ hi! StatusLine guifg=#16252b guibg=#6699CC
 hi! StatusLineNC guifg=#16252b guibg=#16252b
 
 " Try to hide vertical spit and end of buffer symbol
-hi! VertSplit gui=NONE guifg=#17252c guibg=#17252c
-hi! EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
+" hi! VertSplit gui=NONE guifg=#17252c guibg=#17252c
+" hi! EndOfBuffer ctermbg=NONE ctermfg=NONE guibg=#17252c guifg=#17252c
 
 " Customize NERDTree directory
 hi! NERDTreeCWD guifg=#99c794
