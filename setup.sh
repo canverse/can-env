@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "---------------------------------------------------------"
 echo "$(tput setaf 2)can-env: Installation starting.$(tput sgr 0)"
