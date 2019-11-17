@@ -37,3 +37,8 @@ echo "---------------------------------------------------------"
 echo "$(tput setaf 2)can-env: Installing colorls.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 gem install colorls
+
+echo "---------------------------------------------------------"
+echo "$(tput setaf 2)can-env: Installing serve.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+yarn global add serve
