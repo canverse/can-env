@@ -99,10 +99,10 @@ let s:denite_options = {'default' : {
 \ 'source_names': 'short',
 \ 'prompt': 'λ ',
 \ 'statusline': 0,
-\ 'highlight_matched_char': 'QuickFixLine',
+\ 'highlight_matched_char': 'Search',
 \ 'highlight_matched_range': 'Visual',
-\ 'highlight_window_background': 'Visual',
-\ 'highlight_filter_background': 'DiffAdd',
+\ 'highlight_window_background': 'NormalFloat',
+\ 'highlight_filter_background': 'NormalFloat',
 \ 'winrow': 1,
 \ 'vertical_preview': 1
 \ }}
