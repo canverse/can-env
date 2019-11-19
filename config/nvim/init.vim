@@ -443,6 +443,7 @@ vnoremap <leader>p "_dP
 
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd bufenter *.js set filetype=javascript.jsx
 
 " === Search === "
 " ignore case when searching
@@ -471,3 +472,7 @@ set noswapfile
 if exists('g:loaded_webdevicons')
   call webdevicons#refresh()
 endif
+
+
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js'
+let g:closetag_xhtml_filetypes = 'xhtml,javascript.jsx,jsx, javascriptreact, typescriptreact'

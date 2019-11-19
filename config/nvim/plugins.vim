@@ -55,6 +55,9 @@ Plug 'HerringtonDarkholme/yats.vim'
 " ReactJS JSX syntax highlighting
 Plug 'mxw/vim-jsx'
 
+" Autoclose tags
+Plug 'alvan/vim-closetag'
+
 " Generate JSDoc commands based on function signature
 Plug 'heavenshell/vim-jsdoc'
 
