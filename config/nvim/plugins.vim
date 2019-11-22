@@ -50,13 +50,15 @@ Plug 'tpope/vim-fugitive'
 
 " === Javascript Plugins === "
 " Typescript syntax highlighting
-Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 
 " ReactJS JSX syntax highlighting
-Plug 'mxw/vim-jsx'
+" Plug 'mxw/vim-jsx'
 
 " Autoclose tags
-Plug 'alvan/vim-closetag'
+" Plug 'alvan/vim-closetag'
+
+Plug 'sheerun/vim-polyglot'
 
 " Generate JSDoc commands based on function signature
 Plug 'heavenshell/vim-jsdoc'
@@ -70,7 +72,7 @@ Plug 'chr4/nginx.vim'
 Plug 'othree/javascript-libraries-syntax.vim'
 
 " Improved syntax highlighting and indentation
-Plug 'othree/yajs.vim'
+" Plug 'othree/yajs.vim'
 
 " === UI === "
 " File explorer
@@ -88,6 +90,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'drewtempelmeyer/palenight.vim'
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
 " Initialize plugin system
 call plug#end()

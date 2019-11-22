@@ -321,6 +321,11 @@ endfunction
 " ===                             KEY MAPPINGS                             === "
 " ============================================================================ "
 
+" === Markdown Preview settings ===
+
+nmap <leader>md <Plug>MarkdownPreview
+nmap <leader>mD <Plug>MarkdownPreviewStop
+
 " === Denite shorcuts === "
 "   ;         - Browser currently open buffers
 "   <leader>t - Browse list of files in current directory
@@ -476,3 +481,5 @@ endif
 
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.php,*.jsx,*.js'
 let g:closetag_xhtml_filetypes = 'xhtml,javascript.jsx,jsx, javascriptreact, typescriptreact'
+
+let g:vim_jsx_pretty_colorful_config = 1 " default 0
