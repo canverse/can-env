@@ -34,6 +34,10 @@ echo "---------------------------------------------------------"
 yarn global add vtop
 
 echo "---------------------------------------------------------"
+echo "$(tput setaf 2)can-env: Installing typescript.$(tput sgr 0)"
+echo "---------------------------------------------------------"
+yarn global add typescript
+echo "---------------------------------------------------------"
 echo "$(tput setaf 2)can-env: Installing colorls.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 gem install colorls
