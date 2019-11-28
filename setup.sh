@@ -15,7 +15,7 @@ if [[ "$unamestr" == 'Darwin' ]]; then
 
 elif [[ "$unamestr" == 'Linux' ]]; then
     echo "Linux support incoming"
-    source "scripts/setup-system-packages.nix.sh"
+    source "scripts/setup-system-packages.mac.sh"
 fi
 
 echo "---------------------------------------------------------"
