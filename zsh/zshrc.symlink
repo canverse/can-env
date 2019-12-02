@@ -36,8 +36,10 @@ plugins=(git node brew tmux)
 
 # User configuration
 # Hide user@hostname if it's expected default user
-DEFAULT_USER="ctay20"
-prompt_context(){}
+DEFAULT_USER="canibanoglu"
+if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+  export ZSH_THEME_SHOW_HOST=true;
+fi
 
 # Setting rg as the default source for fzf
 export FZF_DEFAULT_COMMAND='rg --files'
