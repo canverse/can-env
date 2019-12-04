@@ -152,6 +152,9 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
+" Remap for rename current word
+nmap <leader>rn <Plug>(coc-rename)
+
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 " Load custom snippets from snippets folder
