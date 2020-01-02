@@ -29,6 +29,11 @@ echo "---------------------------------------------------------"
 yarn global add javascript-typescript-langserver
 
 echo "---------------------------------------------------------"
+echo "$(tput setaf 2)can-env: Installing Vue language server$(tput sgr 0)"
+echo "---------------------------------------------------------"
+yarn global add vue-language-server
+
+echo "---------------------------------------------------------"
 echo "$(tput setaf 2)can-env: Installing vtop.$(tput sgr 0)"
 echo "---------------------------------------------------------"
 yarn global add vtop

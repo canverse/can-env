@@ -36,5 +36,3 @@ do
   echo "---------------------------------------------------------"
 done
 
-
-brew cask install 1password-cli

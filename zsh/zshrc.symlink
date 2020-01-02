@@ -130,6 +130,7 @@ alias vim="nvim"
 alias top="vtop --theme=wizard"
 alias ls="colorls --sd"
 alias sshAgent="eval \$(ssh-agent -s)";
+alias opLogin="eval \$(op signin my)";
 
 # Set Spaceship as prompt
 autoload -U promptinit; promptinit
