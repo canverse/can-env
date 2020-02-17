@@ -93,5 +93,7 @@ Plug 'drewtempelmeyer/palenight.vim'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 
+Plug 'tpope/vim-obsession'
+
 " Initialize plugin system
 call plug#end()
