@@ -28,6 +28,7 @@ packages=(
   "z"
   "gpg"
   "direnv"
+  "reattach-to-user-namespace"
 )
 
 for i in "${packages[@]}"
